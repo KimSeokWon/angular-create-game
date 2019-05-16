@@ -1,0 +1,29 @@
+/* Add application styles & imports to this file! */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body {
+  height: 100% !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.components {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.component-div {
+  width: 100%;
+}
+.right-button {
+  text-align: right;
+}
+.example-container {
+  background-color: whitesmoke;
+  height: 100%;
+}
+.menu-sheet {
+  min-width: 18rem;
+}
+.property-sheet {
+  min-width: 25rem;
+  background-color: #F7E7CE;
+}

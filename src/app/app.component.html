@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">{{name}}</mat-toolbar>
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+  <mat-sidenav class="menu-sheet" mode="side" opened>Sidenav content</mat-sidenav>
+  <mat-sidenav-content class="content">
+    <app-screen-composer></app-screen-composer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>

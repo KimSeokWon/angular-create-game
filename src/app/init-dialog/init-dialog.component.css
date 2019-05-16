@@ -1,0 +1,52 @@
+mat-form-field.full-width {
+  width: 100%;
+}
+span.desc {
+  color: darkgray;
+  font-family: "Roboto";
+  font-size: .9rem;
+  font-weight: lighter;
+  display: block;
+  padding-top: .2rem;
+}
+ul {
+  padding-left: 0;
+  font-family: "Roboto";
+}
+li {
+  list-style: none;
+  padding-bottom: 0.2rem;
+}
+li > span:first-child {
+  width: 10rem;
+  display: inline-block;
+}
+li > span:nth-child(2) {
+  font-weight: 500;
+}
+/*
+.mat-dialog-actions {
+  flex-direction: row-reverse;
+}*/
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+textarea {
+  width :100%;
+}
+.mat-dialog-content > div {
+  padding-bottom: .5rem;
+}
+
+.mat-radio-button {
+  width: 15rem;
+}
+
+.mat-icon-button {
+  width: 20px;
+  height: 20px;
+}
+.mat-dialog-content {
+  min-height: 30rem;
+}

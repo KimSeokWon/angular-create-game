@@ -1,0 +1,96 @@
+<h1 mat-dialog-title>Wizard for create new site</h1>
+<mat-horizontal-stepper>
+  <mat-step>
+    <ng-template matStepLabel>Basic information</ng-template>
+    <div mat-dialog-content>
+      <div>
+        <h2>Basic information
+          <span class="desc">This information is gathering from GMS</span>
+        </h2>
+        <ul>
+          <li><span>Game code</span><span>TK2020</span>
+          <li><span>Game name</span><span>Tokyo 2020 Olympic Games</span>
+          <li><span>Sport pictogram</span><span>Included</span>
+        </ul>
+      </div>
+    </div>
+    <mat-dialog-actions>
+      <button mat-button matStepperNext color="primary">NEXT</button>
+    </mat-dialog-actions>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Configuration</ng-template>
+      <div mat-dialog-content>
+      <div>
+        <h2>Set Your sub domain</h2>
+        <mat-form-field class="">
+          <input type="text" matInput placeholder="Your domain" value="TK2020">
+          <span matSuffix>.rds.race-v.run</span>
+          <mat-hint>Your service domain is mapped as your input.</mat-hint>
+        </mat-form-field>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <h2> Message format</h2>
+        <mat-radio-group aria-label="Choose your message format for result">          
+          <mat-radio-button value="1" checked="true">XML - ODF</mat-radio-button>
+          <mat-radio-button value="2" disabled>JSON</mat-radio-button>
+        </mat-radio-group>        
+      </div>
+      
+      <mat-divider></mat-divider>
+      <div>
+        <h2>Please input your acccount for creating database</h2>        
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Database" value="TK2020" type="text">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Username" value="TK2020" type="text">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Password" value="" type="password">
+        </mat-form-field>
+      </div>
+    </div>
+    <mat-dialog-actions>
+      <button mat-button matStepperNext color="primary">START TO CREATE APPLICATION</button>
+    </mat-dialog-actions>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Create your service</ng-template>    
+    <div mat-dialog-content>
+      <h2>TK2020 Service is creating. please wait a monent...</h2>
+    <textarea rows="20" readonly>Creating Account for database is Done.
+Creating your database is Done.      
+Creating Message Listener is Done.
+Creating Admin Console is Done.
+Creating User website is Done.
+Creating web server is Done.
+Initial data are transforming to your database.
+    </textarea>
+    </div>
+    <mat-dialog-actions>
+      <button mat-button matStepperNext color="primary">NEXT</button>
+    </mat-dialog-actions>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Finish</ng-template>
+    <div mat-dialog-content>
+      <h2>Conguraturation!</h2>
+      <p>Created Applications is below for your service.</p>
+      <mat-divider></mat-divider>
+      <ul>
+        <li><span>Message listener</span><span>http://tk2020.rds.race-v.run:9090</span>
+        <li><span>Admin Console</span><span>http://tk2020.rds.race-v.run:9190</span><button mat-icon-button color="primary">
+      <mat-icon aria-label="Example icon-button with a heart icon">open_in_new</mat-icon>
+    </button>
+        <li><span>WebResult website</span><span>http://tk2020.rds.race-v.run:9290</span>      <button mat-icon-button color="primary">
+      <mat-icon aria-label="Example icon-button with a heart icon">open_in_new</mat-icon>
+    </button>
+      </ul>      
+    </div>
+    <mat-dialog-actions>
+        <button mat-button matStepperNext color="primary">GO TO ADMIN CONSOLE<mat-icon aria-label="Example icon-button with a heart icon">open_in_new</mat-icon></button>
+      </mat-dialog-actions>
+  </mat-step>
+</mat-horizontal-stepper>
